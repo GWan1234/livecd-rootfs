@@ -5,7 +5,8 @@ rm -rf config
 
 echo "Building on $(hostname --fqdn)"
 
-SEEDMIRROR=http://people.canonical.com/~ubuntu-archive/seeds/
+#SEEDMIRROR=http://people.canonical.com/~ubuntu-archive/seeds/
+SEEDMIRROR=https://raw.githubusercontent.com/tinygrad/tinyos/main/ubuntu-seeds/
 if [ -z "$MIRROR" ]; then
 	case $(hostname --fqdn) in
 		*.ubuntu.com)		MIRROR=http://ftpmaster.internal/ubuntu/
